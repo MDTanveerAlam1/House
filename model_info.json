@@ -1,0 +1,34 @@
+{
+    "model_name": "Random Forest (Tuned)",
+    "features": [
+        "area",
+        "bedrooms",
+        "bathrooms",
+        "stories",
+        "mainroad",
+        "guestroom",
+        "basement",
+        "hotwaterheating",
+        "airconditioning",
+        "parking",
+        "prefarea",
+        "furnishingstatus",
+        "total_rooms",
+        "area_per_room",
+        "luxury_score",
+        "log_area",
+        "has_parking"
+    ],
+    "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "performance": {
+        "R2": 0.611,
+        "MAE": 1033033.74,
+        "RMSE": 1402241.68,
+        "MAPE": 21.97
+    }
+}
