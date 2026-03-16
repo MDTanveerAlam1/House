@@ -185,9 +185,9 @@ div[data-testid="stSelectbox"] > div { background: rgba(255,255,255,0.05) !impor
 # ─── Load Model & Data ────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    model  = joblib.load("models/house_price_model.pkl")
-    scaler = joblib.load("models/scaler.pkl")
-    with open("models/model_info.json") as f:
+    model  = joblib.load("house_price_model.pkl")
+    scaler = joblib.load("scaler.pkl")
+    with open("model_info.json") as f:
         info = json.load(f)
     return model, scaler, info
 
